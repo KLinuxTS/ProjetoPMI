@@ -26,7 +26,7 @@ body{
 
 }
 
-article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{
+article,aside,details,figcaption,figure,footer,main,menu,nav,section{
     
     display:block
 
@@ -1012,14 +1012,14 @@ a{
 
 }
 
-.w3-top,.w3-bottom{
+.w3-bottom{
     
     position:fixed;width:100%;z-index:1
 
 }
 .w3-top{
     
-    top:0
+    top:0;width:100%;z-index:1
 
 }
 .w3-bottom{
@@ -2189,3 +2189,106 @@ a{
     border-color:#e7ffff!important
 
 }
+
+/*NÃO MEXER */
+
+.one, .two, .three {
+    background-color: white;/*Define a cor de fundo de um elemento*/
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;/*Define a área de margem nos quatro lados do elemento*/
+
+    transition-duration: 0.3s;/*É utilizado para informar o tempo de duração da animação*/
+}
+
+.menu-toggle{
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.menu-section.on{
+    position: absolute;/*É um recurso usado para ordenar os elementos HTML de uma página web*/
+    top: 0;/*Indica o espaço acima do elemento*/
+    left: 0;/*Defini a posição horizontal do elemento em relação a sua borda esquerda*/
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 10;/*Responsável pelo cálculo e posicionamento da profundidade de algum elemento*/
+
+    display: flex;/*Serve para dispor os elementos dentro de um determinado container em linhas ou colunas*/
+    justify-content: center;/*É empregada para alinhar os elementos ao longo do eixo principal, no caso ao centro*/
+    align-items: center;
+
+    background-color: #2196F3;
+}
+
+.menu-section.on nav{
+    display: block;
+}
+
+.menu-section.on .menu-toggle{
+    position: absolute;
+    right: 25px;/*Defini a posição horizontal do elemento em relação a sua borda direita*/
+    top: 15px;
+}
+
+.menu-section.on .menu-toggle .one{
+    transform: rotate(45deg) translate(7px, 7px);/*Permite modificar o espaço coordenado do modelo de formatação*/
+}
+
+.menu-section.on .menu-toggle .two{
+    opacity: 0;/*Especifica a transparência de um elemento*/
+}
+
+.menu-section.on .menu-toggle .three{
+    transform: rotate(-45deg) translate(8px, -9px);
+}
+
+.menu-section.on nav ul{
+    text-align: center;/*Definem o alinhamento do texto, no caso ele se encontra no centro*/
+    display: block;
+}
+
+.menu-section.on nav ul a{
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem;/*Permite controlar o espaçamento entre as linhas de um texto*/
+    display: block;
+}
+
+header {
+    background-color: #2196F3; /* Definindo uma cor de fundo para o header. */
+  }
+  
+  header nav ul {
+    display: flex; /* Definindo como os elementos serão dispostos na página. */
+  }
+  
+  header nav ul li {
+    list-style: none; /* Definindo o estilo da lista. */
+  }
+  
+  header nav ul li a {
+    text-decoration: none; /* Definindo uma decoração de texto, sendo o mesmo com diferentes tipos de linhas. */
+    color: white; /* Definindo uma cor para a palavra. */
+    text-transform: capitalize; /* Definindo a capitalização das palavras (maiuscula, minuscuça etc). */
+    font-size: 1.4rem; /* Definindo o tamanho da fonte. */
+    padding: 24px; /* Definindo uma distância das boras em relação ao conteúdo. */
+    transition: all 250ms linear 0s; /* definindo a transição entre os elementos. */
+  }
+  
+  header nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.267) /* Definindo uma cor quando o mouse for sobreposto ao elemento. */
+  }
+
+  header .container {
+    display: flex; /* Definindo como os elementos serão dispostos na página. */
+    align-items: center; /* Definindo o alinhamento dos itens */
+    justify-content: space-between; /* Definindo o alinhamento do conteudo no eixo principal. */
+    width: 90%; /*Tornando a largura 90% do valor máximo de largura pré-estabelecido.*/
+    max-width: 1400px; /*Definindo um tamanho máximo de div para não ser ultrapassada.*/
+    margin: auto; /* Definindo uma margem geral. */
+  }
+  
