@@ -26,7 +26,7 @@ body{
 
 }
 
-article,aside,details,figcaption,figure,footer,main,menu,nav,section{
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{
     
     display:block
 
@@ -2190,8 +2190,6 @@ a{
 
 }
 
-/*NÃO MEXER */
-
 .one, .two, .three {
     background-color: white;/*Define a cor de fundo de um elemento*/
     height: 5px;
@@ -2221,7 +2219,7 @@ a{
     justify-content: center;/*É empregada para alinhar os elementos ao longo do eixo principal, no caso ao centro*/
     align-items: center;
 
-    background-color: #2196F3;
+    background-color: #FF8F00;
 }
 
 .menu-section.on nav{
@@ -2258,37 +2256,30 @@ a{
     display: block;
 }
 
-header {
-    background-color: #2196F3; /* Definindo uma cor de fundo para o header. */
-  }
-  
-  header nav ul {
-    display: flex; /* Definindo como os elementos serão dispostos na página. */
-  }
-  
-  header nav ul li {
-    list-style: none; /* Definindo o estilo da lista. */
-  }
-  
-  header nav ul li a {
-    text-decoration: none; /* Definindo uma decoração de texto, sendo o mesmo com diferentes tipos de linhas. */
-    color: white; /* Definindo uma cor para a palavra. */
-    text-transform: capitalize; /* Definindo a capitalização das palavras (maiuscula, minuscuça etc). */
-    font-size: 1.4rem; /* Definindo o tamanho da fonte. */
-    padding: 24px; /* Definindo uma distância das boras em relação ao conteúdo. */
-    transition: all 250ms linear 0s; /* definindo a transição entre os elementos. */
-  }
-  
-  header nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.267) /* Definindo uma cor quando o mouse for sobreposto ao elemento. */
+
+
+@mixin bgGradient($color){
+    background-image: linear-gradient(lighten($color, 12%) 0%, $color 70%);  
   }
 
-  header .container {
-    display: flex; /* Definindo como os elementos serão dispostos na página. */
-    align-items: center; /* Definindo o alinhamento dos itens */
-    justify-content: space-between; /* Definindo o alinhamento do conteudo no eixo principal. */
-    width: 90%; /*Tornando a largura 90% do valor máximo de largura pré-estabelecido.*/
-    max-width: 1400px; /*Definindo um tamanho máximo de div para não ser ultrapassada.*/
-    margin: auto; /* Definindo uma margem geral. */
+
+.ourb {
+    background-color:  #2196F3;
+    @include bgGradient($magenta);  
   }
+
   
+button {
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 15px 40px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    
+    
+  }
+  .esconde {
+    display: none;
+}
