@@ -23,23 +23,19 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block">
     <a href="../index.html#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Início</a> 
-    <a href="alpags/cadernos.html#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Cadernos</a> 
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gabaritos</a>
+    <a href="../paginas/Sobre.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sobre</a>
+    <a href="../paginas/creditos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Créditos</a>
   </div>
 </nav>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Company Name</span>
-</header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !CONTEÚDO DA PÁGINA! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
-
+    <div id="result" class="container"></div>
+    <h1 class="w3-jumbo"><b>SimuNed</b></h1>
     <div class="w3-container" style="margin-top:80px" id="principal">
         <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 46.</b></h1>
         <hr style="width:50px;border:5px solid blue" class="w3-round">
@@ -155,7 +151,7 @@ body {font-size:16px;}
         <h4><b>TEXTO II</b></h4>
         <p>Há ainda quem exporte deliberadamente lixo eletrônico para o Gana. É mais caro reciclar devidamente os resíduos no mundo industrializado, onde até existem os recursos e a tecnologia. Um negócio muito mais lucrativo é vender o lixo eletrônico a negociantes locais, que o importam alegando tratar-se de material usado. Os negociantes depois vendem o lixo aos jovens no mercado, ou noutro lado, que o desmantelam e extraem os fios de cobre. Estes são derretidos em lareiras ao ar livre, poluindo o ar e, muitas vezes, intoxicando diretamente os próprios jovens. </p>
         <p>No contexto das discussões ambientais, as práticas descritas nos textos refletem um padrão de relações derivado do(a): </p>
-  
+        </div>
         <!--alternativas-->
       <div class="alternatives" style="margin-left: 15px;">
         <span>
@@ -1125,7 +1121,7 @@ body {font-size:16px;}
         <hr style="width:50px;border:5px solid blue" class="w3-round">
         <p>Minha fórmula para o que há de grande no indivíduo é amor fati: nada desejar além daquilo que é, nem diante de si, nem atrás de si, nem nos séculos dos séculos. Não se contentar em suportar o inelutável, e ainda menos dissimulá-lo, mas amá-lo. </p>
         <p>Essa fórmula indicada por Nietzsche consiste em uma crítica à tradição cristã que </p>
-  
+      </div>
         <!--alternativas-->
       <div class="alternatives" style="margin-left: 15px;">
         <span>
@@ -1241,19 +1237,18 @@ body {font-size:16px;}
   
   <!-- Final -->
   <div class="w3-container" id="contact" style="margin-top:75px">
-    
-    <form action="/action_page.php" target="_blank">
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Finalizar</button>
-    </form>  
+    <a href="../paginas/resu.html"><button type="submit" class="ourb" >Finalizar</button></a>
   </div>
-
 <!-- End page content -->
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></p></div>
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px; padding-bottom: 0px!important;"><p class="w3-right"> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a><img src="../imgSimu/fateccaralogo.png"><img src="../imgSimu/governosplogo.png" height="45px" width="80px"><img src="../imgSimu/cpslogo.png" height="45px" width="80px"></p></div>
 
 <script>
+
+localStorage.clear();
+
 
 document.getElementById("result").innerHTML = localStorage.getItem("qnt");
 

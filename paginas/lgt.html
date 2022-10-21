@@ -23,25 +23,19 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block">
     <a href="../index.html#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Início</a> 
-    <a href="alpags/cadernos.html#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Cadernos</a> 
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gabaritos</a>
+    <a href="../paginas/Sobre.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sobre</a>
+    <a href="../paginas/creditos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Créditos</a>
   </div>
 </nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Company Name</span>
-</header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !CONTEÚDO DA PÁGINA! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
-
+    <div id="result" class="container"></div>
     <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-jumbo"><b>Alpha (v1.0.1)</b></h1>
+        <h1 class="w3-jumbo"><b>SimuNed</b></h1>
         <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 01 Inglês.</b></h1>
         <hr style="width:50px;border:5px solid blue" class="w3-round">
         <p>We are now a nation obsessed with the cult of celebrity. Celebrities have replaced the classic notion of the hero. But instead of being respected for talent, courage or intelligence, it is money, style and image the deciding factors in what commands respect. Image is everything. Their image is painstakingly constructed by a multitude of different image consultants to carve out the most profitable celebrity they can. Then society is right behind them, believing in everything that celebrity believes in. Companies know that people will buy a product if a celebrity has it too. It is as if the person buying the product feels that they now have some kind of connection with the celebrity and that some of their perceived happiness will now be passed onto the consumer. So to look at it one way, the cult of celebrity is really nothing more than a sophisticated marketing scheme. Celebrities though cannot be blamed for all negative aspects of society. In reality society is to blame. We are the people who seemed to have lost the ability to think for ourselves. I suppose it’s easier to be told what to think, rather than challenging what we are told. The reason we are swamped by celebrity is because there is a demand for it. </p>
@@ -1528,19 +1522,19 @@ body {font-size:16px;}
   
   <!-- Final -->
   <div class="w3-container" id="contact" style="margin-top:75px">
-    
-    <form action="/action_page.php" target="_blank">
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Finalizar</button>
-    </form>  
+    <a href="../paginas/resu.html"><button type="submit" class="ourb" >Finalizar</button></a>
   </div>
 
 <!-- End page content -->
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></p></div>
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px; padding-bottom: 0px!important;"><p class="w3-right"> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a><img src="../imgSimu/fateccaralogo.png"><img src="../imgSimu/governosplogo.png" height="45px" width="80px"><img src="../imgSimu/cpslogo.png" height="45px" width="80px"></p></div>
 
 <script>
+
+localStorage.clear();
+
 
 document.getElementById("result").innerHTML = localStorage.getItem("qnt");
 
