@@ -6,38 +6,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../proj.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
 </head>
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Simulado<br>Enem 2021 (v0.0.1)</b></h3>
+<nav class="menu_lateral"><br>
+  <div>
+    <h3 class="titulo_menu"><b>Simulado<br>Enem 2021 (v0.0.1)</b></h3>
   </div>
-  <div class="w3-bar-block">
-    <a href="../index.html#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Início</a> 
-    <a href="../paginas/Sobre.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sobre</a>
-    <a href="../paginas/creditos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Créditos</a>
+  <div class="menu">
+    <a href="../index.html#" onclick="close()" class="barra botao cover">Início</a> <br>
+    <a href="../paginas/Sobre.html" onclick="close()" class="barra botao cover">Sobre</a><br>
+    <a href="../paginas/creditos.html" onclick="close()" class="barra botao cover" >Créditos</a>
   </div>
 </nav>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !CONTEÚDO DA PÁGINA! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-    <div id="result" class="container"></div>
-    <div class="w3-container" style="margin-top:80px" id="principal">
-      <h1 class="w3-jumbo"><b>SimuNed</b></h1>
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 91.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+<div class="principal">
+    <div id="result"> </div>
+      <h1 class="simuned"><b>SimuNed</b></h1>
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 91.</b></h1>
+        <hr>
         <p>No cultivo por hidroponia, são utilizadas soluções nutritivas contendo macronutrientes e micronutrientes essenciais. Além dos nutrientes, o pH é um parâmetro de extrema importância, uma vez que ele afeta a preparação da solução nutritiva e a absorção dos nutrientes pelas plantas. Para o cultivo de alface, valores de pH entre 5,5 e 6,5 são ideais para o seu desenvolvimento.</p> 
     
           <p>As correções de pH são feitas pela adição de compostos ácidos ou básicos, mas não devem introduzir elementos nocivos às plantas. Na tabela, são apresentados alguns dados da composição da solução nutritiva de referência para esse cultivo. Também é apresentada a composição de uma solução preparada por um produtor de cultivo hidropônico.</p>
@@ -46,7 +37,7 @@ body {font-size:16px;}
       </div>
       
         <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
                <input type="radio" name="question-91" value="A"> A) ácido fosfórico, H3PO4.
           </span><br>
@@ -64,9 +55,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 92.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 92.</b></h1>
+          <hr>
           <p>O sino dos ventos é composto por várias barras metálicas de mesmo
             material e espessura, mas de comprimentos diferentes, conforme a figura. </p>
             <img src="../imgSimu/Q92.PNG">
@@ -75,7 +66,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-92" value="A"> A) f1 < f2 e v1 < v2.
           </span><br>
@@ -93,9 +84,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 93.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 93.</b></h1>
+          <hr>
           <p>O polvo mimético apresenta padrões cromáticos e comportamentos muito
             curiosos. Frequentemente, muda a orientação de seus tentáculos,
             assemelhando-se a alguns animais. As imagens 1, 3 e 5 apresentam polvos
@@ -107,7 +98,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-93" value="A"> A) originaram-se do mesmo ancestral que esses animais.
           </span><br>
@@ -127,9 +118,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 94.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 94.</b></h1>
+          <hr>
           <p>A figura foi extraída de um antigo jogo para computadores, chamado Bang! Bang!.</p>
             <img src="../imgSimu/Q94.PNG">
             <p>No jogo, dois competidores controlam os canhões A e B,
@@ -152,7 +143,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-94" value="A"> A) 30 m/s.
           </span><br>
@@ -170,9 +161,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 95.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 95.</b></h1>
+          <hr>
           <p>Os pesticidas organoclorados foram amplamente empregados na
             agricultura, contudo, em razão das suas elevadas toxicidades e persistências no
             meio ambiente, eles foram banidos. Considere a aplicação de 500 g de um
@@ -184,7 +175,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-95" value="correct"> A) 3,9 g.
           </span><br>
@@ -202,9 +193,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 96.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 96.</b></h1>
+          <hr>
           <p>A sequência de nucleotídeos do RNA mensageiro presentes em um gene
             de um fungo, constituída de sete códons, está escrita a seguir.</p>
     
@@ -218,7 +209,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-96" value="A"> A) Deleção de G no códon 3.
           </span><br>
@@ -236,9 +227,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 97.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 97.</b></h1>
+          <hr>
           <p>A simples atitude de não jogar direto no lixo ou no ralo da pia o óleo de
             cozinha usado pode contribuir para a redução da poluição ambiental. Mas o que
             fazer com o óleo vegetal que não será mais usado? Não existe um modelo ideal
@@ -253,7 +244,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-97" value="A"> A) redução.
           </span><br>
@@ -271,9 +262,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 98.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 98.</b></h1>
+          <hr>
           <p>Durante o desenvolvimento embrionário humano ocorre uma
             comunicação entre os átrios direito e esquerdo através do forame oval (ou
             forame de Botal). Essa comunicação não causa prejuízos à circulação do bebê
@@ -287,7 +278,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-98" value="A"> A) aves, porque a pequena circulação e a grande circulação estão presentes.
           </span><br>
@@ -309,9 +300,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 99.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 99.</b></h1>
+          <hr>
           <p>Na cidade de São Paulo, as ilhas de calor são responsáveis pela alteração
             da direção do fluxo da brisa marítima que deveria atingir a região de mananciais.
             Mas, ao cruzar a ilha de calor, a brisa marítima agora encontra um fluxo de ar
@@ -332,7 +323,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-99" value="correct"> A) irradiação e convecção.
           </span><br>
@@ -350,9 +341,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 100.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 100.</b></h1>
+          <hr>
           <p>No seu estudo sobre a queda dos corpos, Aristóteles afirmava que se
             abandonarmos corpos leves e pesados de uma mesma altura, o mais pesado
             chegaria mais rápido ao solo. Essa ideia está apoiada em algo que é difícil de
@@ -374,7 +365,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-100" value="A"> A) peso dos corpos.
           </span><br>
@@ -392,9 +383,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 101.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 101.</b></h1>
+          <hr>
           <p>A obtenção de etanol utilizando a cana-de-açúcar envolve a fermentação
             dos monossacarídeos formadores da sacarose contida no melaço. Um desses
             formadores é a glicose (C6H12O6), cuja fermentação produz cerca de 50 g de
@@ -412,7 +403,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-101" value="A"> A) 16.
           </span><br>
@@ -430,9 +421,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 102.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 102.</b></h1>
+          <hr>
           <p>É possível ligar aparelhos elétricos de baixa corrente utilizando materiais
             comuns de laboratório no lugar das tradicionais pilhas. A ilustração apresenta
             uma montagem que faz funcionar um cronômetro digital.</p>
@@ -446,7 +437,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-102" value="A"> A) <img src="../imgSimu/Q102A.JPG">
           </span><br>
@@ -464,9 +455,9 @@ body {font-size:16px;}
           </span><br>
         </div>
           
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 103.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 103.</b></h1>
+          <hr>
           <p>Um técnico analisou um lote de analgésicos que supostamente estava 
             fora das especificações. A composição prevista era 100 mg de ácido 
             acetilsalicílico por comprimido (princípio ativo, cuja estrutura está apresentada 
@@ -493,7 +484,7 @@ body {font-size:16px;}
         </div>
     
           <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-103" value="A"> A) 1.
           </span><br>
@@ -511,9 +502,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 104.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 104.</b></h1>
+          <hr>
           <p> O rompimento da barragem de rejeitos de mineração no município mineiro de Mariana e o derramamento de produtos tóxicos nas águas do Rio Doce,
               ocorridos em 2015, ainda têm consequências para os organismos que habitam o Parque Nacional Marinho de Abrolhos, localizado a mais de 1 000 quilômetros de distância.
               Esse desastre ambiental afetou o fitoplâncton, as esponjas, as algas macroscópicas, os peixes herbívoros e os golfinhos.  </p>
@@ -523,7 +514,7 @@ body {font-size:16px;}
         </div>
     
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-104" value="A"> A) esponjas.
           </span><br>
@@ -542,9 +533,9 @@ body {font-size:16px;}
         </div>
     
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 105.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 105.</b></h1>
+          <hr>
           <p> Duas esferas carregadas com cargas iguais em módulo e sinais contrários estão ligadas por uma haste rígida isolante na forma de haltere. 
             O sistema se movimenta sob ação da gravidade numa região que tem um campo magnético horizontal uniforme (𝐵), da esquerda para a direita. 
             A imagem apresenta o sistema visto de cima para baixo, no mesmo sentido da aceleração da gravidade (𝑔) que atua na região.   </p>
@@ -557,7 +548,7 @@ body {font-size:16px;}
         </div>
     
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-105" value="correct"> A) <img src="../imgSimu/Q105 A.JPG">
           </span><br><br>
@@ -576,9 +567,9 @@ body {font-size:16px;}
         </div>
     
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 106.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 106.</b></h1>
+          <hr>
           <p> A icterícia, popularmente conhecida por amarelão, é uma patologia frequente em recém-nascidos. Um bebê com icterícia não consegue metabolizar e excretar de forma eficiente a bilirrubina. Com isso, o acúmulo dessa substância deixa-o com a pele amarelada. A fototerapia é um tratamento da icterícia neonatal, que consiste na irradiação de luz no bebê.
              Na presença de luz, a bilirrubina é convertida no seu isômero lumirrubina que, por ser mais solúvel em água, é excretada pela bile ou pela urina. A imagem ilustra o que ocorre nesse tratamento.</p>
     
@@ -589,7 +580,7 @@ body {font-size:16px;}
         </div>
     
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-106" value="A"> A) ótico.
           </span><br>
@@ -608,9 +599,9 @@ body {font-size:16px;}
         </div>
     
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 107.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 107.</b></h1>
+          <hr>
           <p> Analisando a ficha técnica de um automóvel popular, verificam-se algumas características em relação ao seu desempenho. 
             Considerando o mesmo automóvel em duas versões, uma delas funcionando a álcool e outra, a gasolina, tem-se os dados apresentados no quadro,
              em relação ao desempenho de cada motor. </p>
@@ -622,7 +613,7 @@ body {font-size:16px;}
         </div>
     
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-107" value="A"> A) Como a versão a gasolina consegue a maior aceleração, esta é a que desenvolve a maior potência.
           </span><br>
@@ -641,9 +632,9 @@ body {font-size:16px;}
         </div>
     
     
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 108.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 108.</b></h1>
+          <hr>
           <p><b> TEXTO I </b> </p>
           <p> No cordel intitulado Senhor dos Anéis, de autoria de Gonçalo Ferreira da Silva, lê-se a sextilha: </p>
           <p style="padding-left: 30px;"> A distância em relação <br>
@@ -662,7 +653,7 @@ body {font-size:16px;}
         </div>
     
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-108" value="A"> A) Mercúrio.
           </span><br>
@@ -681,9 +672,9 @@ body {font-size:16px;}
         </div>
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 109.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 109.</b></h1>
+          <hr>
           <p> Cientistas da Universidade de New South Wales, na Austrália, demonstraram em 2012 que a Lei de Ohm é válida mesmo para fios finíssimos, cuja área da seção reta compreende alguns poucos átomos.
              A tabela apresenta as áreas e comprimentos de alguns dos fios construídos (respectivamente com as mesmas unidades de medida). 
              Considere que a resistividade mantém-se constante para todas as geometrias (uma aproximação confirmada pelo estudo).  </p>
@@ -695,7 +686,7 @@ body {font-size:16px;}
         </div>
       
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-109" value="A"> A) R1 < R2 < R3 < R4.
           </span><br>
@@ -715,9 +706,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-    <div class="w3-container" style="margin-top:80px" id="">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 110.</b></h1>
-      <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <div class="questao">
+      <h1 class="titulo_questao"><b>Questão 110.</b></h1>
+      <hr>
       <p> Organismos autótrofos e heterótrofos realizam processos complementares que associam os ciclos do carbono e do oxigênio.
          O carbono fixado pela energia luminosa ou a partir de compostos inorgânicos é eventualmente degradado pelos organismos, resultando em fontes de carbono como metano ou gás carbônico.
          Ainda, outros compostos orgânicos são catabolizados pelos seres, com menor rendimento energético, produzindo compostos secundários (subprodutos) que podem funcionar como combustíveis ambientais. </p>
@@ -727,7 +718,7 @@ body {font-size:16px;}
     </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
       <span>
         <input type="radio" name="question-110" value="A"> A) fotossíntese.
       </span><br>
@@ -747,9 +738,9 @@ body {font-size:16px;}
     
     
     <!--questão-->
-    <div class="w3-container" style="margin-top:80px" id="">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 111.</b></h1>
-      <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <div class="questao">
+      <h1 class="titulo_questao"><b>Questão 111.</b></h1>
+      <hr>
       <p> Uma escola iniciou o processo educativo para implantação da coleta seletiva e destino de materiais recicláveis. Para atingir seus objetivos, a instituição planejou: </p>
     
       <p> 1) sensibilizar a comunidade escolar, desenvolvendo atividades em sala e extraclasse de maneira contínua; <br>
@@ -762,7 +753,7 @@ body {font-size:16px;}
     </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
       <span>
         <input type="radio" name="question-111" value="A"> A) Realizar campanhas educativas de sensibilização em bairros vizinhos para fortalecer a coleta seletiva.
       </span><br>
@@ -782,9 +773,9 @@ body {font-size:16px;}
     
     
     <!--questão-->
-    <div class="w3-container" style="margin-top:80px" id="">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 112.</b></h1>
-      <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <div class="questao">
+      <h1 class="titulo_questao"><b>Questão 112.</b></h1>
+      <hr>
       <p> Os búfalos são animais considerados rústicos pelos criadores e, por isso, são deixados no campo sem controle reprodutivo. Por causa desse tipo de criação, a consanguinidade é favorecida, proporcionando o aparecimento de enfermidades, como o albinismo, defeitos cardíacos, entre outros.
          Separar os animais de forma adequada minimizaria a ocorrência desses problemas. </p>
       
@@ -793,7 +784,7 @@ body {font-size:16px;}
     </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
       <span>
         <input type="radio" name="question-112" value="A"> A) Transgenia.
       </span><br>
@@ -813,9 +804,9 @@ body {font-size:16px;}
     
     
     <!--questão-->
-    <div class="w3-container" style="margin-top:80px" id="">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 113.</b></h1>
-      <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <div class="questao">
+      <h1 class="titulo_questao"><b>Questão 113.</b></h1>
+      <hr>
       <p> O ciclo do cobre é um experimento didático em que o cobre metálico é utilizado como reagente de partida.
          Após uma sequência de reações (I, II, III, IV e V), o cobre retorna ao seu estado inicial ao final do ciclo.  </p>
     
@@ -826,7 +817,7 @@ body {font-size:16px;}
     </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
       <span>
         <input type="radio" name="question-113" value="A"> A) I.
       </span><br>
@@ -846,9 +837,9 @@ body {font-size:16px;}
     
     
     <!--questão-->
-    <div class="w3-container" style="margin-top:80px" id="">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 114.</b></h1>
-      <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <div class="questao">
+      <h1 class="titulo_questao"><b>Questão 114.</b></h1>
+      <hr>
       <p> Um dos exames clínicos mais tradicionais para medir a capacidade reflexa dos indivíduos é o exame do reflexo patelar. 
         Esse exame consiste na estimulação da patela, um pequeno osso localizado na parte anterior da articulação do joelho, com um pequeno martelo. 
         A resposta reflexa ao estímulo é caracterizada pelo levantamento da perna em que o estímulo foi aplicado.  </p>
@@ -858,7 +849,7 @@ body {font-size:16px;}
     </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
       <span>
         <input type="radio" name="question-114" value="A"> A) Ponte.
       </span><br>
@@ -878,10 +869,11 @@ body {font-size:16px;}
     
     
     <!--questão--> 
-    <div class="w3-container" style="margin-top:80px" id="">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 115.</b></h1>
-      <hr style="width:50px;border:5px solid blue" class="w3-round">
-      <p> </p>
+    <div class="questao">
+      <h1 class="titulo_questao"><b>Questão 115.</b></h1>
+      <hr>
+      <p> Na montagem de uma cozinha para um restaurante, a escolha do material correto para as panelas é importante, pois a panela que conduz mais calor é capaz de cozinhar os alimentos mais rapidamente e, com isso, há economia de gás.
+        A taxa de condução do calor depende da condutividade k do material, de sua área A, da diferença de temperatura DT e da espessura d do material, sendo dada pela relação  </p>
     
       
       <p> </p> <br>
@@ -889,7 +881,7 @@ body {font-size:16px;}
     </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
       <span>
         <input type="radio" name="question-115" value="A"> A) cobre-aço, alumínio e ferro.
       </span><br>
@@ -910,9 +902,9 @@ body {font-size:16px;}
     
     
     <!--questão-->
-    <div class="w3-container" style="margin-top:80px" id="">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 116.</b></h1>
-      <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <div class="questao">
+      <h1 class="titulo_questao"><b>Questão 116.</b></h1>
+      <hr>
       <p> As águas subterrâneas têm sido contaminadas pelo uso de pesticidas na agricultura.
          Entre as várias substâncias usualmente encontradas, algumas são apresentadas na figura. 
          A distinção dessas substâncias pode ser feita por meio de uma análise química qualitativa, ou seja, determinando sua presença mediante a adição de um reagente específico.
@@ -925,7 +917,7 @@ body {font-size:16px;}
     </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas" style="margin-left: 15px;">
       <span>
         <input type="radio" name="question-116" value="A"> A) I
       </span><br>
@@ -945,9 +937,9 @@ body {font-size:16px;}
     
     
     <!--questão-->
-    <div class="w3-container" style="margin-top:80px" id="">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 117.</b></h1>
-      <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <div class="questao">
+      <h1 class="titulo_questao"><b>Questão 117.</b></h1>
+      <hr>
       <p> Com o aumento da população de suínos no Brasil, torna-se necessária a adoção de métodos para reduzir o potencial poluidor dos resíduos dessa agroindústria, uma vez que, comparativamente ao esgoto doméstico, os dejetos suínos são 200 vezes mais poluentes.
          Sendo assim, a utilização desses resíduos como matéria-prima na obtenção de combustíveis é uma alternativa que permite diversificar a matriz energética nacional, ao mesmo tempo em que parte dos recursos hídricos do país são preservados.  </p>
       
@@ -956,7 +948,7 @@ body {font-size:16px;}
     </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
       <span>
         <input type="radio" name="question-117" value="A"> A) etanol.
       </span><br>
@@ -976,9 +968,9 @@ body {font-size:16px;}
     
     
     <!--questão-->
-    <div class="w3-container" style="margin-top:80px" id="">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 118.</b></h1>
-      <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <div class="questao">
+      <h1 class="titulo_questao"><b>Questão 118.</b></h1>
+      <hr>
       <p> A curcumina, uma das substâncias que confere a cor alaranjada ao açafrão, pode auxiliar no combate à dengue quando adicionada à água de criadouros do mosquito transmissor.
          Essa substância acumula-se no intestino do inseto após ser ingerida com a água do criadouro e, quando ativada pela luz, induz a produção de espécies reativas de oxigênio que danificam de forma fatal o tecido do tubo digestório. </p>
     
@@ -988,7 +980,7 @@ body {font-size:16px;}
     </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
       <span>
         <input type="radio" name="question-118" value="A"> A) morte do indivíduo adulto.
       </span><br>
@@ -1008,9 +1000,9 @@ body {font-size:16px;}
     
     
     <!--questão-->
-    <div class="w3-container" style="margin-top:80px" id="">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 119.</b></h1>
-      <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <div class="questao">
+      <h1 class="titulo_questao"><b>Questão 119.</b></h1>
+      <hr>
       <p> Com o objetivo de identificar a melhor espécie produtora de madeira para construção (com resistência mecânica e à degradação), foram analisadas as estruturas anatômicas de cinco espécies, conforme o quadro.  </p>
     
       <p> <img src="../imgSimu/Q119.JPG"></p> <br>
@@ -1020,7 +1012,7 @@ body {font-size:16px;}
     </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
       <span>
         <input type="radio" name="question-119" value="correct"> A) 1.
       </span><br>
@@ -1040,9 +1032,9 @@ body {font-size:16px;}
     
     
     <!--questão-->
-    <div class="w3-container" style="margin-top:80px" id="">
-      <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 120.</b></h1>
-      <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <div class="questao">
+      <h1 class="titulo_questao"><b>Questão 120.</b></h1>
+      <hr>
       <p> No outono, as folhas das árvores mudam de cor, de verde para tons de amarelo, castanho, laranja e vermelho.
          A cor verde das folhas deve-se ao pigmento clorofila. 
          Nas plantas de folhas caducas, a produção de clorofila diminui e o tom verde desvanece, permitindo assim que outros pigmentos, como o caroteno, de coloração amarelo-alaranjado, e a antocianina, de tons avermelhados, passem a dominar a tonalidade das folhas.
@@ -1060,7 +1052,7 @@ body {font-size:16px;}
     </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
       <span>
         <input type="radio" name="question-120" value="correct"> A) Entre o violeta e o azul.
       </span><br>
@@ -1080,9 +1072,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 121.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 121.</b></h1>
+          <hr>
           <p> Entre 2014 e 2016, as regiões central e oeste da África sofreram uma grave epidemia de febre hemorrágica causada pelo vírus ebola, que se manifesta em até 21 dias após a infecção e cuja taxa de letalidade (enfermos que vão a óbito) pode chegar a 90%.
             Em regiões de clima tropical e subtropical, um outro vírus também pode causar febre hemorrágica: o vírus da dengue, que, embora tenha período de incubação menor (até 10 dias), apresenta taxa de letalidade abaixo de 1%.  </p>
     
@@ -1092,7 +1084,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-121" value="A"> A) Ebola, pois o maior período de incubação reflete duração mais longa do processo de coevolução patógeno-hospedeiro.
           </span><br>
@@ -1112,9 +1104,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-            <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 122.</b></h1>
-            <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+            <h1 class="titulo_questao"><b>Questão 122.</b></h1>
+            <hr>
             <p> A imagem apresenta as etapas do funcionamento de uma estação individual para tratamento do esgoto residencial </p>
       
             <p> <img src="../imgSimu/Q122.png"></p> <br>
@@ -1124,7 +1116,7 @@ body {font-size:16px;}
         </div>
       
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
             <span>
                 <input type="radio" name="question-122" value="A"> A) 1
             </span><br>
@@ -1144,9 +1136,9 @@ body {font-size:16px;}
     
     
           <!--questão-->
-          <div class="w3-container" style="margin-top:80px" id="">
-            <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 123.</b></h1>
-            <hr style="width:50px;border:5px solid blue" class="w3-round">
+          <div class="questao">
+            <h1 class="titulo_questao"><b>Questão 123.</b></h1>
+            <hr>
             <p> O plantio por estaquia é um método de propagação de plantas no qual partes de um espécime são colocadas no solo para produzir novas gerações.
                Na floricultura, é comum utilizar o caule das roseiras para estaquia, pois a propagação da planta é positiva em razão da aplicação de auxinas na porção inferior do caule. </p>
         
@@ -1155,7 +1147,7 @@ body {font-size:16px;}
         </div>
       
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
             <span>
                 <input type="radio" name="question-123" value="A"> A) floração da planta.
             </span><br>
@@ -1175,9 +1167,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 124.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 124.</b></h1>
+          <hr>
           <p> O emprego de células de combustível a hidrogênio pode ser uma tecnologia adequada ao transporte automotivo. </p>
           <p> O quadro apresenta características de cinco tecnologias mais proeminentes de células de combustível. </p>
     
@@ -1190,7 +1182,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-124" value="A"> A) AFC.
           </span><br>
@@ -1210,9 +1202,9 @@ body {font-size:16px;}
     
     
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 125.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 125.</b></h1>
+          <hr>
           <p> Considere a tirinha, na situação em que a temperatura do ambiente é inferior à temperatura corporal dos personagens. </p>
     
           <p> <img src="../imgSimu/Q125.png"></p> <br>
@@ -1222,7 +1214,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-125" value="A"> A) a temperatura do vapor-d’água presente no ar é alta. 
           </span><br>
@@ -1242,9 +1234,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-            <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 126.</b></h1>
-            <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+            <h1 class="titulo_questao"><b>Questão 126.</b></h1>
+            <hr>
             <p> Um garoto precisa montar um circuito que acenda três lâmpadas de cores diferentes, uma de cada vez. 
               Ele dispõe das lâmpadas, de fios, uma bateria e dois interruptores, como ilustrado, junto com seu símbolo de três pontos. 
               Quando esse interruptor fecha AB, abre BC e vice-versa. </p>
@@ -1258,7 +1250,7 @@ body {font-size:16px;}
         </div>
       
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
             <span>
                 <input type="radio" name="question-126" value="A"> A) <img src="../imgSimu/Q126A.png">
             </span><br><br>
@@ -1278,9 +1270,9 @@ body {font-size:16px;}
     
     
           <!--questão-->
-          <div class="w3-container" style="margin-top:80px" id="">
-            <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 127.</b></h1>
-            <hr style="width:50px;border:5px solid blue" class="w3-round">
+          <div class="questao">
+            <h1 class="titulo_questao"><b>Questão 127.</b></h1>
+            <hr>
             <p> Estudo aponta que a extinção de preguiças-gigantes, cuja base da dieta eram frutos e sementes, provocou impactos consideráveis na vegetação do Pantanal brasileiro.
                A flora, embora não tenha desaparecido, tornou-se menos abundante que no passado, além de ocupar áreas mais restritas. </p>
         
@@ -1289,7 +1281,7 @@ body {font-size:16px;}
         </div>
       
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
             <span>
                 <input type="radio" name="question-127" value="A"> A) da produção de flores.
             </span><br>
@@ -1309,9 +1301,9 @@ body {font-size:16px;}
         
         
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 128.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 128.</b></h1>
+          <hr>
           <p> Carros  elétricos  estão  cada  vez  mais  baratos, no entanto, os órgãos governamentais e a indústria se preocupam com o tempo de recarga das baterias, que é muito mais lento quando comparado ao tempo gasto para encher o tanque de combustível.
              Portanto, os usuários de transporte individual precisam se conscientizar dos ganhos ambientais dessa mudança e planejar com antecedência seus percursos, pensando em pausas necessárias para recargas.  </p>
     
@@ -1322,7 +1314,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-128" value="A"> A) 0,005
           </span><br>
@@ -1342,9 +1334,9 @@ body {font-size:16px;}
       
       
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 129.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 129.</b></h1>
+          <hr>
           <p> Nas angiospermas, além da fertilização da oosfera, existe uma segunda fertilização que resulta num tecido triploide. </p>
       
           <p> Essa segunda fertilização foi importante evolutivamente, pois viabilizou a formação de um tecido de </p> <br>
@@ -1352,7 +1344,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-129" value="A"> A) nutrição para o fruto.
           </span><br>
@@ -1372,9 +1364,9 @@ body {font-size:16px;}
       
       
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 130.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 130.</b></h1>
+          <hr>
           <p> Com o objetivo de proporcionar aroma e sabor a diversos alimentos, a indústria alimentícia se utiliza de flavorizantes. Em geral, essas substâncias são ésteres, como as apresentadas no quadro. </p>
     
           <p> <img src="../imgSimu/Q130.png"></p> <br>
@@ -1384,7 +1376,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-130" value="A"> A) kiwi.
           </span><br>
@@ -1405,9 +1397,9 @@ body {font-size:16px;}
     
     
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 131.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 131.</b></h1>
+          <hr>
           <p> O eletrocardiograma é um exame cardíaco que mede a intensidade dos sinais elétricos advindos do coração.
              A imagem apresenta o resultado típico obtido em um paciente saudável e a intensidade do sinal (VEC ) em função do tempo. </p>
     
@@ -1418,7 +1410,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-131" value="A"> A) 30.
           </span><br>
@@ -1438,9 +1430,9 @@ body {font-size:16px;}
     
     
        <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 132.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 132.</b></h1>
+          <hr>
           <p> A deficiência de lipase ácida lisossômica é uma doença hereditária associada a um gene do cromossomo 10.
              Os pais dos pacientes podem não saber que são portadores dos genes da doença até o nascimento do primeiro filho afetado.
              Quando ambos os progenitores são portadores, existe uma chance, em quatro, de que seu bebê possa nascer com essa doença.  </p>
@@ -1450,7 +1442,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-132" value="correct"> A) recessivo.
           </span><br>
@@ -1470,9 +1462,9 @@ body {font-size:16px;}
     
     
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 133.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 133.</b></h1>
+          <hr>
           <p> O quadro lista alguns dispositivos eletrônicos que estão presentes no dia a dia, bem como a faixa de força eletromotriz necessária ao seu funcionamento. </p>
     
           <p> <img src="../imgSimu/Q133.1.png"></p> <br>
@@ -1486,7 +1478,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-133" value="A"> A) I.
           </span><br>
@@ -1506,9 +1498,9 @@ body {font-size:16px;}
       
       
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 134.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 134.</b></h1>
+          <hr>
           <p> O alcoolômetro Gay Lussac é um instrumento destinado a medir o teor de álcool, em porcentagem de volume (v/v), de soluções de água e álcool na faixa de 0 °GL a 100 °GL, com divisões de 0,1 °GL. 
             A concepção do alcoolômetro se baseia no princípio de flutuabilidade de Arquimedes, semelhante ao funcionamento de um densímetro. 
             A escala do instrumento é aferida a 20 °C, sendo necessária a correção da medida, caso a temperatura da solução não esteja na temperatura de aferição. 
@@ -1521,7 +1513,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-134" value="A"> A) aumento da dissociação da água.
           </span><br>
@@ -1541,9 +1533,9 @@ body {font-size:16px;}
     
     
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 135.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 135.</b></h1>
+          <hr>
           <p> O  Prêmio  Nobel  de  Química  de  2000  deveu-se à descoberta e ao desenvolvimento de polímeros condutores. 
             Esses materiais têm ampla aplicação em novos dispositivos eletroluminescentes (LEDs), células fotovoltaicas etc. 
             Uma propriedade-chave de um polímero condutor é a presença de ligações duplas conjugadas ao longo da cadeia  do polímero. </p>
@@ -1553,7 +1545,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-135" value="A"> A) <img src="../imgSimu/Q135A.png">
           </span><br>
@@ -1573,9 +1565,9 @@ body {font-size:16px;}
       
       
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 136.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 136.</b></h1>
+          <hr>
           <p> Um segmento de reta está dividido em duas partes na proporção áurea quando o todo está para uma das partes na mesma razão em que essa parte está para a outra. 
             Essa constante de proporcionalidade é comumente representada pela letra grega φ, e seu valor é dado pela solução positiva da equação φ<sup>2</sup> = φ + 1.  </p>
     
@@ -1588,7 +1580,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-136" value="A"> A) 5φ + 3
           </span><br>
@@ -1608,9 +1600,9 @@ body {font-size:16px;}
     
     
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 137.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 137.</b></h1>
+          <hr>
           <p> O  Atomium, representado na imagem, é um dos principais pontos turísticos de Bruxelas. 
             Ele foi construído em 1958 para a primeira grande exposição mundial depois da Segunda Guerra Mundial, a Feira Mundial de Bruxelas.  </p>
     
@@ -1633,7 +1625,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-137" value="A"> A) <img src="../imgSimu/Q137A.png">
           </span><br>
@@ -1653,9 +1645,9 @@ body {font-size:16px;}
     
     
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 138.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 138.</b></h1>
+          <hr>
           <p> A Copa do Brasil teve, até a edição de 2018, 15 times diferentes como campeões da competição, conforme apresentado na imagem. Suponha que, como homenagem aos times campeões, a Confederação Brasileira de Futebol (CBF) pretenda colocar um painel na sua sede. 
             Esse painel teria 6 linhas e, em cada uma delas, 5 placas, referentes a cada edição da competição, com o nome do time vencedor, o brasão e o ano do título. 
             O painel deve ser fabricado de modo que a primeira linha só tenha clubes gaúchos (Internacional, Grêmio e Juventude); a segunda, apenas times cariocas (Flamengo, Vasco e Fluminense); a terceira, somente times mineiros (Cruzeiro e Atlético Mineiro); a quarta, exclusivamente clubes paulistas (Corinthians, Palmeiras, Santos, Paulista FC, Santo André), e as duas últimas sem nenhuma restrição. </p>
@@ -1667,7 +1659,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-138" value="A"> A) <img src="../imgSimu/Q138A.png">.
           </span><br>
@@ -1687,9 +1679,9 @@ body {font-size:16px;}
     
     
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 139.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 139.</b></h1>
+          <hr>
           <p> Uma rede de hamburgueria tem três franquias em cidades distintas. 
             Visando incluir um novo tipo de lanche no cardápio, o gerente de marketing da rede sugeriu que fossem colocados à venda cinco novos tipos de lanche, em edições especiais. 
             Os lanches foram oferecidos pelo mesmo período de tempo em todos os franqueados. 
@@ -1703,7 +1695,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-139" value="A"> A) I.
           </span><br>
@@ -1723,9 +1715,9 @@ body {font-size:16px;}
     
     
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 140.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 140.</b></h1>
+          <hr>
           <p> Uma grande rede de supermercados adota um sistema de avaliação dos faturamentos de suas filiais, considerando a média de faturamento mensal em milhão. 
             A matriz da rede paga uma comissão para os representantes dos supermercados que atingirem uma média de faturamento mensal (M), conforme apresentado no quadro. </p>
     
@@ -1740,7 +1732,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-140" value="A"> A) I.
           </span><br>
@@ -1760,9 +1752,9 @@ body {font-size:16px;}
     
     
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 141.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 141.</b></h1>
+          <hr>
           <p> Aplicativos que gerenciam serviços de hospedagem têm ganhado espaço no Brasil e no mundo por oferecer opções diferenciadas em termos de localização e valores de hospedagem. 
             Em um desses aplicativos, o preço P a ser pago pela hospedagem é calculado considerando um preço por diária d, acrescido de uma taxa fixa de limpeza L e de uma taxa de serviço. 
             Essa taxa de serviço é um valor percentual s calculado sobre o valor pago pelo total das diárias. </p>
@@ -1772,7 +1764,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-141" value="correct"> A) P = d.n+L+d.n.s
           </span><br>
@@ -1792,9 +1784,9 @@ body {font-size:16px;}
     
     
       <!--questão-->
-      <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 142.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 142.</b></h1>
+          <hr>
           <p> O organizador de uma competição de lançamento de dardos pretende tornar o campeonato mais competitivo. 
             Pelas regras atuais da competição, numa rodada, o jogador lança 3 dardos e pontua caso acerte pelo menos um deles no alvo. 
             O organizador considera que, em média, os jogadores têm, em cada lançamento, ½ de probabilidade de acertar um dardo no alvo </p>
@@ -1807,7 +1799,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-142" value="A"> A) 2.
           </span><br>
@@ -1827,9 +1819,9 @@ body {font-size:16px;}
       
       
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 143.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 143.</b></h1>
+          <hr>
           <p> O gráfico apresenta o nível de ocupação dos cinco reservatórios de água que abasteciam uma cidade em 2 de fevereiro de 2015. </p>
     
           <p> <img src="../imgSimu/Q143.png"></p> <br>
@@ -1839,7 +1831,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-143" value="A"> A) I.
           </span><br>
@@ -1859,9 +1851,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 144.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 144.</b></h1>
+          <hr>
           <p> Uma pessoa realizou uma pesquisa com alguns alunos de uma escola, coletando suas idades, e organizou esses dados no gráfico </p>
     
           <p> <img src="../imgSimu/Q144.png"></p> <br>
@@ -1871,7 +1863,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-144" value="A"> A) 9.
           </span><br>
@@ -1891,9 +1883,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 145.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 145.</b></h1>
+          <hr>
           <p> Em um estudo realizado pelo IBGE em quatro estados e no Distrito Federal, com mais de 5 mil pessoas com 10 anos ou mais, observou-se que a leitura ocupa, em média, apenas seis minutos do dia de cada pessoa. 
             Na faixa de idade de 10 a 24 anos, a média diária é de três minutos. 
             No entanto, no grupo de idades entre 24 e 60 anos, o tempo médio diário dedicado  à leitura é de 5 minutos. Entre os mais velhos, com 60 anos ou mais, a média é de 12 minutos. </p>
@@ -1907,7 +1899,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-145" value="A"> A) 10 e 80.
           </span><br>
@@ -1927,9 +1919,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 146.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 146.</b></h1>
+          <hr>
           <p> Um zootecnista pretende testar se uma nova ração para coelhos é mais eficiente do que a que ele vem utilizando atualmente. 
             A ração atual proporciona uma massa média de 10 kg por coelho, com um desvio padrão de 1 kg, alimentado com essa ração durante um período de três meses. </p>
     
@@ -1945,7 +1937,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-146" value="A"> A) 5,0.
           </span><br>
@@ -1965,9 +1957,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 147.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 147.</b></h1>
+          <hr>
           <p> Nos setores mais altamente desenvolvidos da sociedade contemporânea, o transplante de necessidades sociais para individuais é de tal modo eficaz que a diferença entre elas parece puramente teórica. 
             As criaturas se reconhecem em suas mercadorias; encontram sua alma em seu automóvel, casa em patamares, utensílios de cozinha. 
             A Cifra de César é um exemplo de um método de codificação de mensagens usado por Júlio César para se comunicar com seus generais.  </p>
@@ -1990,7 +1982,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-147" value="A"> A) A, E, O e S.
           </span><br>
@@ -2010,9 +2002,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 148.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 148.</b></h1>
+          <hr>
           <p> O quadro apresenta o número de terremotos de magnitude maior ou igual a 7, na escala Richter, ocorridos em nosso planeta nos anos de 2000 a 2011. </p>
     
           <p> <img src="../imgSimu/Q148.png"></p> <br>
@@ -2024,7 +2016,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-148" value="A"> A) 11.
           </span><br>
@@ -2044,9 +2036,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 149.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 149.</b></h1>
+          <hr>
           <p> A receita R de uma empresa ao final de um mês é o dinheiro captado com a venda de mercadorias ou com a prestação de serviços nesse mês, e a despesa D é todo o dinheiro utilizado para pagamento de salários, contas de água e luz, impostos, entre outros. 
             O lucro mensal obtido ao final do mês é a diferença entre a receita e a despesa registradas no mês. 
             O gráfico apresenta as receitas e despesas, em milhão de real, de uma empresa ao final dos cinco primeiros meses de um dado ano. </p>
@@ -2060,7 +2052,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-149" value="A"> A) janeiro.
           </span><br>
@@ -2080,9 +2072,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 150.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 150.</b></h1>
+          <hr>
           <p> A depressão caracteriza-se por um desequilíbrio na química cerebral. 
             Os neurônios de um deprimido não respondem bem aos estímulos dos neurotransmissores. 
             Os remédios que combatem a depressão têm o objetivo de restabelecer a química cerebral. 
@@ -2095,7 +2087,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-150" value="A"> A) 45,4.
           </span><br>
@@ -2115,9 +2107,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 151.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 151.</b></h1>
+          <hr>
           <p> Um casal está planejando comprar um apartamento de dois quartos num bairro de uma cidade e consultou a página de uma corretora de imóveis, encontrando 105 apartamentos de dois quartos à venda no bairro desejado. 
             Eles usaram um aplicativo da corretora para gerar a distribuição dos preços do conjunto de imóveis selecionados. </p>
     
@@ -2133,7 +2125,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-151" value="A"> A) 600.
           </span><br>
@@ -2153,9 +2145,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 152.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 152.</b></h1>
+          <hr>
           <p> Para a comunicação entre dois navios é utilizado um sistema de codificação com base em valores numéricos. 
             Para isso, são consideradas as operações triângulo ∆ e estrela *, definidas sobre o conjunto dos números reais por x∆y = x<sup>2</sup> + xy – y<sup>2</sup> e x * y = xy + x.  </p>
     
@@ -2170,7 +2162,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-152" value="A"> A) √5
           </span><br>
@@ -2190,9 +2182,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 153.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 153.</b></h1>
+          <hr>
           <p> Um parque temático brasileiro construiu uma réplica em miniatura do castelo de Liechtenstein.
              O castelo original, representado na imagem, está situado na Alemanha e foi reconstruído entre os anos de 1840 e 1842, após duas destruições causadas por guerras. </p>
     
@@ -2207,7 +2199,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-153" value="A"> A) 1 : 576.
           </span><br>
@@ -2227,9 +2219,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 154.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 154.</b></h1>
+          <hr>
           <p> A demografia médica é o estudo da população de médicos no Brasil nos aspectos quantitativo e qualitativo, sendo um dos seus objetivos fazer projeções sobre a necessidade da formação de novos médicos. 
             Um desses estudos gerou um conjunto de dados que aborda a evolução do número de médicos e da população brasileira por várias décadas. 
             O quadro apresenta parte desses dados. </p>
@@ -2244,7 +2236,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-154" value="A"> A) 0,17.
           </span><br>
@@ -2264,9 +2256,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 155.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 155.</b></h1>
+          <hr>
           <p>  Um atleta produz sua própria refeição com custo fixo de R$ 10,00. 
             Ela é composta por 400g de frango, 600g de batata-doce e uma hortaliça. 
             Atualmente, os preços dos produtos para essa refeição são: </p>
@@ -2282,7 +2274,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-155" value="A"> A) 12,5.
           </span><br>
@@ -2302,9 +2294,9 @@ body {font-size:16px;}
     
     
         <!--questão-->
-        <div class="w3-container" style="margin-top:80px" id="">
-          <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 156.</b></h1>
-          <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <div class="questao">
+          <h1 class="titulo_questao"><b>Questão 156.</b></h1>
+          <hr>
           <p> <img src="../imgSimu/Q156.png"> </p>
       
           <p> A expressão algébrica que representa as posições P(t) da massa m, ao longo do tempo, no gráfico, é </p> <br>
@@ -2312,7 +2304,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
           <span>
               <input type="radio" name="question-156" value="correct"> A) - 3 cos (2t).
           </span><br>
@@ -2331,9 +2323,9 @@ body {font-size:16px;}
       </div>
     
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 157.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 157.</b></h1>
+        <hr>
         <p>Uma construtora, pretendendo investir na construção de imóveis em uma 
           metrópole com cinco grandes regiões, fez uma pesquisa sobre a quantidade de 
           famílias que mudaram de uma região para outra, de modo a determinar qual 
@@ -2352,7 +2344,7 @@ body {font-size:16px;}
       </div>
     
        <!--alternativas-->
-       <div class="alternatives" style="margin-left: 15px;">
+       <div class="alternativas">
         <span>
           <input type="radio" name="question-157" value="A"> A) 1.
         </span><br>
@@ -2370,9 +2362,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 158.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 158.</b></h1>
+        <hr>
         <p>Para realizar um voo entre duas cidades que distam 2 000 km uma da outra, 
           uma companhia aérea utilizava um modelo de aeronave A, capaz de transportar 
           até 200 passageiros. Quando uma dessas aeronaves está lotada de 
@@ -2387,7 +2379,7 @@ body {font-size:16px;}
       </div>
     
         <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-158" value="A"> A) 10% menor.
         </span><br>
@@ -2405,9 +2397,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 159.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 159.</b></h1>
+        <hr>
         <p>Em uma corrida automobilística, os carros podem fazer paradas nos boxes 
           para efetuar trocar de pneus. Nessas trocas, o trabalho é feito por um grupo de 
           três pessoas em cada pneu. Considere que os grupos iniciam o trabalho no 
@@ -2423,7 +2415,7 @@ body {font-size:16px;}
       </div>
     
     <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
     <span>
       <input type="radio" name="question-159" value="correct"> A) 6
     </span><br>
@@ -2442,9 +2434,9 @@ body {font-size:16px;}
     </div>
     
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 160.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 160.</b></h1>
+        <hr>
         <p>Um nutricionista verificou, na dieta diária do seu cliente, a falta de 800mg do 
           mineral A, de 1 000 mg do mineral B e de 1 200 mg do mineral C. Por isso, 
           recomendou a compra de suplementos alimentares que forneçam os minerais 
@@ -2470,7 +2462,7 @@ body {font-size:16px;}
       </div>
     
        <!--alternativas-->
-       <div class="alternatives" style="margin-left: 15px;">
+       <div class="alternativas">
         <span>
           <input type="radio" name="question-160" value="A"> A) I
         </span><br>
@@ -2488,9 +2480,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 161.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 161.</b></h1>
+        <hr>
         <p>O administrador de um teatro percebeu que, com o ingresso do evento a 
           R$20,00, um show conseguia atrair 200 pessoas e que, a cada R$1,00 de 
           redução no preço do ingresso, o número de pessoas aumentava em 40. Ele sabe 
@@ -2504,7 +2496,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-          <div class="alternatives" style="margin-left: 15px;">
+          <div class="alternativas">
             <span>
               <input type="radio" name="question-161" value="A"> A) <img src="../imgSimu/Q161 A.JPG">
             </span><br>
@@ -2522,9 +2514,9 @@ body {font-size:16px;}
             </span><br>
           </div>  
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 162.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 162.</b></h1>
+        <hr>
         <p>O quadro representa a relação entre o preço de um produto (R) e seu 
           respectivo imposto devido (I)</p>
         
@@ -2535,7 +2527,7 @@ body {font-size:16px;}
       </div>
       
           <!--alternativas-->
-          <div class="alternatives" style="margin-left: 15px;">
+          <div class="alternativas">
             <span>
               <input type="radio" name="question-162" value="correct"> A) <img src="../imgSimu/Q162 A.JPG">
             </span><br>
@@ -2553,9 +2545,9 @@ body {font-size:16px;}
             </span><br>
           </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 163.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 163.</b></h1>
+        <hr>
         <p>A relação de Newton-Laplace estabelece que o módulo volumétrico de um 
           fluido é diretamente proporcional ao quadrado da velocidade do som (em metro 
           por segundo) no fluido e à sua densidade (em quilograma por metro cúbico), com 
@@ -2565,7 +2557,7 @@ body {font-size:16px;}
       </div>
     
        <!--alternativas-->
-       <div class="alternatives" style="margin-left: 15px;">
+       <div class="alternativas">
         <span>
           <input type="radio" name="question-163" value="A"> A)  kg.m<sup>-2</sup>.s<sup>-1</sup>
         </span><br>
@@ -2583,9 +2575,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 164.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 164.</b></h1>
+        <hr>
         <p>Uma pessoa pretende viajar por uma companhia aérea que despacha 
           gratuitamente uma mala com até 10 kg.</p>
         <p>Em duas viagens que realizou, essa pessoa utilizou a mesma mala e conseguiu 
@@ -2601,7 +2593,7 @@ body {font-size:16px;}
         </div>
     
         <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-164" value="A"> A) 22
         </span><br>
@@ -2619,9 +2611,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 165.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 165.</b></h1>
+        <hr>
         <p>Um automóvel apresenta um desempenho médio de 16 km/L. Um 
           engenheiro desenvolveu um novo motor a combustão que economiza, em 
           relação ao consumo do motor anterior, 0,1 L de combustível a cada 20 km 
@@ -2632,7 +2624,7 @@ body {font-size:16px;}
       </div>
     
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-165" value="A"> A) 15,9.
           </span><br>
@@ -2650,9 +2642,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 166.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 166.</b></h1>
+        <hr>
         <p>O projeto de um contêiner, em forma de paralelepípedo reto retangular, previa 
           a pintura dos dois lados (interno e externo) de cada uma das quatro paredes com 
           tinta acrílica e a pintura do piso interno com tinta epóxi. O construtor havia 
@@ -2679,7 +2671,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-166" value="A"> A) I
         </span><br>
@@ -2697,9 +2689,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 167.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 167.</b></h1>
+        <hr>
         <p>Um povoado com 100 habitantes está passando por uma situação de seca 
           prolongada e os responsáveis pela administração pública local decidem 
           contratar a construção de um reservatório. Ele deverá ter a forma de um cilindro 
@@ -2714,7 +2706,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-167" value="A"> A) 1,12
         </span><br>
@@ -2732,9 +2724,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 168.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 168.</b></h1>
+        <hr>
         <p>Num octaedro regular, duas faces são consideradas opostas quando não têm 
           nem arestas, nem vértices em comum. Na figura, observa-se um octaedro 
           regular e uma de suas planificações, na qual há uma face colorida na cor cinza 
@@ -2748,7 +2740,7 @@ body {font-size:16px;}
       </div>
     
         <!--alternativas-->
-        <div class="alternatives" style="margin-left: 15px;">
+        <div class="alternativas">
           <span>
             <input type="radio" name="question-168" value="A"> A) 1,2,3 e 4
           </span><br>
@@ -2766,9 +2758,9 @@ body {font-size:16px;}
           </span><br>
         </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 169.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 169.</b></h1>
+        <hr>
         <p>O instrumento de percussão conhecido como triângulo é composto por uma 
         barra fina de aço, dobrada em um formato que se assemelha a um triângulo, com 
         uma abertura e uma haste, conforme ilustra a Figura 1.</p>
@@ -2790,7 +2782,7 @@ body {font-size:16px;}
       </div>
     
        <!--alternativas-->
-       <div class="alternatives" style="margin-left: 15px;">
+       <div class="alternativas">
         <span>
           <input type="radio" name="question-169" value="A"> A) 9,07.
         </span><br>
@@ -2808,9 +2800,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 170.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 170.</b></h1>
+        <hr>
         <p>Uma pessoa comprou uma caneca para tomar sopa, conforme ilustração.</p>
     
         <img src="../imgSimu/Q170.JPG">
@@ -2825,7 +2817,7 @@ body {font-size:16px;}
         </div>
     
         <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-170" value="A"> A) 216
         </span><br>
@@ -2843,9 +2835,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 171.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 171.</b></h1>
+        <hr>
         <p>O dono de uma loja pretende usar cartões imantados para a divulgação de 
           sua loja. A empresa que fornecerá o serviço lhe informa que o custo de 
           fabricação do cartão é de R$ 0,01 por centímetro quadrado e que disponibiliza 
@@ -2865,7 +2857,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-171" value="A"> A) triângulo.
         </span><br>
@@ -2883,9 +2875,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 172.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 172.</b></h1>
+        <hr>
         <p>Um ciclista amador de 61 anos de idade utilizou um monitor cardíaco para 
           medir suas frequências cardíacas em quatro diferentes tipos de trechos do 
           percurso. Os resultados das frequências cardíacas máximas alcançadas nesses 
@@ -2904,7 +2896,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-172" value="A"> A) leve no plano, forte no plano, subida moderada e subida forte.
         </span><br>
@@ -2922,9 +2914,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 173.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 173.</b></h1>
+        <hr>
         <p>Um lava-rápido oferece dois tipos de lavagem de veículos: lavagem simples, 
           ao preço de R$ 20,00, e lavagem completa, ao preço de R$ 35,00. Para cobrir 
           as despesas com produtos e funcionários, e não ter prejuízos, o lava-rápido deve 
@@ -2935,7 +2927,7 @@ body {font-size:16px;}
       </div>
     
         <!--alternativas-->
-    <div class="alternatives" style="margin-left: 15px;">
+    <div class="alternativas">
     <span>
       <input type="radio" name="question-173" value="A"> A) 6
     </span><br>
@@ -2953,9 +2945,9 @@ body {font-size:16px;}
     </span><br>
     </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 174.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 174.</b></h1>
+        <hr>
         <p>Após consulta médica, um paciente deve seguir um tratamento composto por 
           três medicamentos: X, Y e Z. O paciente, para adquirir os três medicamentos, 
           faz um orçamento em três farmácias diferentes, conforme o quadro.</p>
@@ -2977,7 +2969,7 @@ body {font-size:16px;}
         </div>
     
          <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-174" value="A"> A) X, Y e Z na Farmácia 1
         </span><br>
@@ -2995,9 +2987,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 175.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 175.</b></h1>
+        <hr>
         <p>Muitos brinquedos que frequentemente são encontrados em praças e 
           parques públicos apresentam formatos de figuras geométricas bidimensionais e 
           tridimensionais. Uma empresa foi contratada para desenvolver uma nova forma 
@@ -3014,7 +3006,7 @@ body {font-size:16px;}
         </div>
     
         <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-175" value="correct"> A) 12 trapézios isósceles e 12 quadrados.
         </span><br>
@@ -3032,9 +3024,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 176.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 176.</b></h1>
+        <hr>
         <p>O sistema de numeração romano ainda é utilizado na indicação de capítulos 
           e volumes de livros, na designação de séculos e, em ordem cronológica, de 
           papas e reis de mesmo nome. São utilizadas sete letras do alfabeto:</p>
@@ -3055,7 +3047,7 @@ body {font-size:16px;}
       </div>
     
       <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-176" value="A"> A) 379
         </span><br>
@@ -3073,9 +3065,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 177.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 177.</b></h1>
+        <hr>
         <p>Uma das bases mais utilizadas para representar um número é a base decimal. 
           Entretanto, os computadores trabalham com números na base binária. Nessa 
           base, qualquer número natural é representado usando apenas os algarismos 0 
@@ -3098,7 +3090,7 @@ body {font-size:16px;}
       </div>
     
         <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-177" value="A"> A) 101.
         </span><br>
@@ -3116,9 +3108,9 @@ body {font-size:16px;}
         </span><br>
       </div>
       
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 178.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 178.</b></h1>
+        <hr>
         <p>Uma unidade de medida comum usada para expressar áreas de terrenos de 
           grandes dimensões é o hectare, que equivale a 10 000 m2. Um fazendeiro 
           decide fazer um loteamento utilizando 3 hectares de sua fazenda, dos quais 0,9 
@@ -3132,7 +3124,7 @@ body {font-size:16px;}
       </div>
     
           <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-178" value="A"> A) 700 000
         </span><br>
@@ -3151,9 +3143,9 @@ body {font-size:16px;}
       </div>
       
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 179.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 179.</b></h1>
+        <hr>
         <p>Uma pessoa produzirá uma fantasia utilizando como materiais: 2 tipos de 
           tecidos diferentes e 5 tipos distintos de pedras ornamentais. Essa pessoa tem à 
           sua disposição 6 tecidos diferentes e 15 pedras ornamentais distintas.</p>
@@ -3163,7 +3155,7 @@ body {font-size:16px;}
       </div>
         
           <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-179" value="correct"> A) <img src="../imgSimu/Q179A.png">
         </span><br>
@@ -3181,9 +3173,9 @@ body {font-size:16px;}
         </span><br>
       </div>
     
-      <div class="w3-container" style="margin-top:80px" id="">
-        <h1 class="w3-xxxlarge w3-text-blue"><b>Questão 180.</b></h1>
-        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      <div class="questao">
+        <h1 class="titulo_questao"><b>Questão 180.</b></h1>
+        <hr>
         <p>Os diretores de uma escola precisam construir um laboratório
            para uso dos alunos. Há duas possibilidades:</p>
     
@@ -3200,7 +3192,7 @@ body {font-size:16px;}
       </div>
       
           <!--alternativas-->
-      <div class="alternatives" style="margin-left: 15px;">
+      <div class="alternativas">
         <span>
           <input type="radio" name="question-180" value="A"> A) 1,31 mil reais.
         </span><br>
@@ -3222,29 +3214,18 @@ body {font-size:16px;}
 
 
 
-    <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright"></span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
 
 
   
   <!-- Final -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
+  <div style="margin-top:75px; padding:0.01em 16px">
     <a href="../paginas/resu.html"><button type="submit" class="ourb" >Finalizar</button></a>
   </div>
-
 <!-- End page content -->
 </div>
 
-
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px; padding-bottom: 0px!important;"><p class="w3-right"> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a><img src="../imgSimu/fateccaralogo.png"><img src="../imgSimu/governosplogo.png" height="45px" width="80px"><img src="../imgSimu/cpslogo.png" height="45px" width="80px"></p></div>
+<!-- IMAGENS FATEC/GOVSP/CPS -->
+<div style="margin-top:75px; padding-right:58px; padding-top:32px; padding-bottom:32px"> <p style="float:right"> </a> <a href="http://www.fateccarapicuiba.edu.br/">  <img src="../imgSimu/fateccaralogo.png"> </a>  <a href="https://www.saopaulo.sp.gov.br/"> <img src="../imgSimu/governosplogo.png" height="45px" width="80px"> </a> <a href="https://www.cps.sp.gov.br/"> <img src="../imgSimu/cpslogo.png" height="45px" width="80px"> </a></p></div>
 
 <script>
 

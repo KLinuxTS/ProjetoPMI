@@ -6,25 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../proj.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
 </head>
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Simulado<br>Enem 2021 (v0.0.1)</b></h3>
+<nav class="menu_lateral"><br>
+  <div>
+    <h3 class="titulo_menu"><b>Simulado<br>Enem 2021 (v0.0.1)</b></h3>
   </div>
-  <div class="w3-bar-block">
-    <a href="../index.html#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Início</a> 
-    <a href="../paginas/Sobre.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sobre</a>
-    <a href="../paginas/creditos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Créditos</a>
+  <div class="menu">
+    <a href="../index.html#" onclick="close()" class="barra botao cover">Início</a> <br>
+    <a href="../paginas/Sobre.html" onclick="close()" class="barra botao cover">Sobre</a><br>
+    <a href="../paginas/creditos.html" onclick="close()" class="barra botao cover" >Créditos</a>
   </div>
 </nav>
 
@@ -38,7 +31,7 @@ body {font-size:16px;}
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !CONTEÚDO DA PÁGINA! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<div class="principal">
 
 
     <Div Class = "sobre-o-site">
@@ -90,7 +83,7 @@ body {font-size:16px;}
     </p>
     </Div>
 </div>
-    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px; padding-bottom: 0px!important;"><p class="w3-right"> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a><img src="../imgSimu/fateccaralogo.png"><img src="../imgSimu/governosplogo.png" height="45px" width="80px"><img src="../imgSimu/cpslogo.png" height="45px" width="80px"></p></div>
+<div style="margin-top:75px; padding-right:58px; padding-top:32px; padding-bottom:32px"> <p style="float:right"> </a> <a href="http://www.fateccarapicuiba.edu.br/">  <img src="../imgSimu/fateccaralogo.png"> </a>  <a href="https://www.saopaulo.sp.gov.br/"> <img src="../imgSimu/governosplogo.png" height="45px" width="80px"> </a> <a href="https://www.cps.sp.gov.br/"> <img src="../imgSimu/cpslogo.png" height="45px" width="80px"> </a></p></div>
 
 </body>
 </html>
